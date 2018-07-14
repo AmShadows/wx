@@ -1,0 +1,42 @@
+/* pages/index-item/index-item.wxss */
+.index-container{
+  display: flex;
+  margin: 20rpx 0rpx 20rpx 15rpx;
+}
+.container-left>image{
+  width: 190rpx;
+  height: 130rpx;
+  padding-top: 12rpx;
+}
+.container-mid{
+  width: 480rpx;
+  padding: 0 0 0 15rpx;
+
+}
+.container-mid>text{
+  font-size: 33rpx;
+}
+.container-right{
+  width: 120rpx;
+  font-size: 26rpx;
+  padding: 50rpx 0 0 0;
+}
+.collected{
+  width: 30rpx;
+  height: 30rpx;
+}
+.five-star{
+  display: flex;
+}
+.pingfen{
+  font-size: 26rpx;
+}
+.jianmian{
+  vertical-align:middle;
+}
+/* 去掉滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

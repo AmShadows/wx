@@ -1,0 +1,28 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #F2F2F2;
+  font-size: 32rpx;
+}
+.main{
+  margin: 20rpx 0rpx 0rpx 0rpx ;
+}
+.user{
+  display: flex;
+  background-color: white;
+  padding-left: 20rpx
+}
+.user>text{
+  padding-top: 12rpx
+}
+.list{
+  margin: 20rpx 0rpx 0rpx 0rpx ;
+  background-color: white;
+  padding-left: 36rpx
+}
+.redenvelopes{
+  padding:20rpx 0rpx 20rpx 0rpx ;
+  border-bottom: dotted lightgray 1rpx;
+}
+.redenvelopestwo{
+  padding:20rpx 0rpx 20rpx 0rpx ;
+}

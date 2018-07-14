@@ -1,0 +1,18 @@
+<!--pages/dingdan/dingdan.wxml-->
+<view class='main'>
+  <view class='main-shop-name'>
+    <view class='main-shop-left'>{{shop}}</view>
+    <view class='main-shop-right'>订单已完成 ></view>
+  </view>
+  <view class='main-food' wx:for="{{orderDetail}}" wx:for-index="idx" wx:key="idx">
+      <view>{{item.title}}</view>
+      <view>×{{item.numb}}</view>
+      <view>￥{{item.price}}</view>
+  </view>
+  <view class='all-money'>
+    <view>实付：{{cost}}元</view>
+    <view><button>再来一单</button></view>
+    <view><button style='background-color:red' catchtap='evaluate'>评价</button></view>
+  </view>
+  
+</view>

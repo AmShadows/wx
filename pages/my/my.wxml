@@ -1,0 +1,12 @@
+<!--pages/my/my.wxml-->
+<view class='main'>
+  <view class='user'>
+    <image src='/images/rice/femalerice.jpg' style='width:120rpx;height:120rpx;padding:20rpx 20rpx 20rpx 20rpx'></image>
+    <text>用户名：AmShadows</text>
+  </view>
+  <view class='list'>
+    <view class='redenvelopes'><text class="iconfont icon-pag2"></text>\t我的红包</view>
+    <view class='redenvelopestwo'><text class="iconfont icon-map"></text>\t我的地址</view>
+  </view>
+  
+</view>

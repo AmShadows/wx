@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<import src="/pages/index-item/index-item.wxml" /> 
+
+<view class="header">
+  <view class="header-left" catchtap='ontapjump'>
+    <view class="header-location"><image src="/images/locationblack.jpg" /></view>
+    <!-- <view class="header-text" wx:for="{{Detail}}" wx:for-index="idx" wx:key="idx">{{item.address}}1111</view> -->
+    <view class="header-text">广州大学华软...</view>
+  </view>
+  <view class='arrow' catchtap='ontapjump'></view>
+  <image src='/images/search.png' class='header-right-image'/>
+  <view class="search-input">
+    <input placeholder="请输入商家或商品名称" bindinput="input"></input>
+  </view>
+</view>
+<view>
+  <swiper indicator-dots='true' autoplay='true' interval='2000' vertical='{{false}}' >
+    <swiper-item>
+      <image src="/images/rice/maleonerice.jpg" data-post-id='1' />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/rice/maleonerice.jpg" data-post-id='2' />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/rice/riceone.jpg" data-post-id='3' />
+    </swiper-item>
+  </swiper>
+</view>
+<view class='mid-center'>——  附近商家  ——</view>
+<view class='sort'>
+  <view>综合排序
+   <image src='/images/down.png' class='sort-img'></image> 
+  </view>
+  <view>销量最高</view>
+  <view>距离最近</view>
+  <view class='sort-screen'>
+    <view class='sort-text'>筛选</view>
+    <image src='/images/screen.png' class='screen-img' />
+  </view>
+</view>
+
+<block wx:for="{{ppostList}}" wx:for-item="item" wx:for-index="idx" wx:key="key" >
+  <view catchtap="ontaptodetail" data-post-id='{{item.postId}}'>
+    <template is="postItemTpl" data="{{...item}}" />
+  </view>
+</block>
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

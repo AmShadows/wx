@@ -1,0 +1,28 @@
+<!--pages/index-item/index-item.wxml-->
+<template name="postItemTpl"> 
+  <view class='index-container'>
+    <view class='container-left'><image src="{{avater}}"></image></view>
+    <view class='container-mid'>
+      <text>{{name}}</text>
+      <view class='five-star'>
+        <image src='/images/wx_app_collected.png' class='collected' />
+        <image src='/images/wx_app_collected.png' class='collected' />
+        <image src='/images/wx_app_collected.png' class='collected' />
+        <image src='/images/wx_app_collected.png' class='collected' />
+        <image src='/images/wx_app_collected.png' class='collected' />
+        <text class='pingfen'>{{star}}\t{{sell}}</text>
+      </view>
+      <view class='pingfen'>{{firstsend}}\t|\t配送￥{{distribution}}</view>
+      <view>
+        <image src='/images/7.png' class='collected jianmian' />
+        <text class='pingfen'>\t{{mian}}</text>
+      </view>
+      <view>
+        <image src='/images/8.png' class='collected jianmian' />
+        <text class='pingfen'>\t{{newuser}}</text>
+      </view>
+
+    </view>
+    <view class='container-right'>{{minute}}</view>
+  </view>
+</template>

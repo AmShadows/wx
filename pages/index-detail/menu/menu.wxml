@@ -1,0 +1,39 @@
+<!--pages/index-detail/menu/menu.wxml-->
+<template name="menuitem">
+  <scroll-view scroll-y="true" class='scroll-view-left'>
+    <block wx:for="{{groups}}"  wx:key="">
+			<view class="menuList">
+				<view class="title {{index==selected?'selected':''}}" data-index="{{index}}" catchtap="turnMenu">{{item.typeName}}
+				</view>
+			</view>
+		</block>
+  </scroll-view>
+  <scroll-view scroll-y="true" class='scroll-view-right'>
+      <block wx:for="{{groups[selected].menuContent}}" wx:for-item="item" wx:key="">
+        <view class="food">
+          <image class="food-img" src="{{item.src}}"></image> 
+          <view class="food-info">
+            <view class="food-name">{{item.name}}</view>
+            <view class="food-sales">月售 {{item.sales}} 赞 {{item.rating}}</view>
+            <view class='food-button'>
+              <view class="food-price">￥{{item.price}}</view>
+              <view class="food-numb">
+                <view class="remove-add" 
+                bindtap="removefood"
+                hidden="{{item.numb==0}}" 
+                data-index="{{index}}"><view class='food-icon-left'>-</view></view>
+                <view class="food-text" 
+                hidden="{{item.numb==0}}">{{item.numb}}</view>
+                <view class="food-add" 
+                bindtap="addfood" data-index="{{index}}">
+                  <view class='food-icon-right'>+</view>
+                </view>
+              </view>
+            </view>
+            
+          </view>
+          
+        </view>
+      </block>
+    </scroll-view>
+</template>

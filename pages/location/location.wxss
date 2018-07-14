@@ -1,0 +1,92 @@
+/* pages/location/location.wxss */
+.header{
+  display: flex;
+  border-bottom:1rpx solid lightgrey;
+}
+.header-input{
+  margin: 25rpx 0rpx 20rpx 30rpx;
+  /* background-color: lightgray; */
+  filter:alpha(opacity=60); 
+  -moz-opacity:0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6; 
+  width: 600rpx;
+}
+.search-btn{
+  position: relative;
+  margin: 25rpx 0rpx 20rpx 20rpx;
+  background-color: red;
+  border-radius: 10rpx;
+  width: 70rpx;
+}
+.search-text{
+  position: absolute;
+  font-size: 25rpx;
+  color: white;
+  top: 10rpx;
+  left: 10rpx;
+}
+.dingwei{
+  display: flex;
+  position: relative;
+  height: 95rpx;
+  border-bottom:1rpx solid lightgrey;
+}
+.dingwei-text{
+  position: absolute;
+  top: 25rpx;
+  left: 25rpx;
+}
+.dingwei-refresh{
+  position: absolute;
+  top: 30rpx;
+  right: 25rpx;
+  font-size: 30rpx;
+  color: red;
+}
+.myaddress{
+  padding: 25rpx 0 0 25rpx;
+}
+.myaddress-top{
+  display: flex;
+}
+.myaddress-img{
+  width: 25rpx;
+  height: 25rpx;
+  vertical-align: middle;
+}
+.myaddress-text{
+  font-size: 25rpx;
+  padding-left: 10rpx
+}
+
+.nearaddress{
+  padding: 25rpx 0 0 25rpx;
+}
+.nearaddress-top{
+  display: flex;
+}
+.nearaddress-img{
+  width: 25rpx;
+  height: 25rpx;
+  vertical-align: middle;
+}
+.nearaddress-text{
+  font-size: 25rpx;
+  padding-left: 10rpx
+}
+.foot{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  background-color: white;
+  border-top:1rpx solid lightgrey;
+  
+}
+.foot-text{
+  position: absolute;
+  top: 10rpx;
+  left: 250rpx;
+}

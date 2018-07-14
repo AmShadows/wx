@@ -1,0 +1,78 @@
+/* pages/dingdan/dingdan.wxss */
+page{
+  background-color: #F2F2F2;
+  font-size: 32rpx;
+}
+.main{
+  margin: 20rpx 20rpx 0 20rpx;
+}
+.main-shop-name{
+   background-color: #FAFAFA; 
+   /* background-color:red; */
+  display: flex;
+  position: relative;
+  height: 70rpx;
+}
+.main-shop-left{
+  position: absolute;
+  left: 20rpx;
+  top: 10rpx;
+}
+.main-shop-right{
+  position: absolute;
+  right: 0;
+  top: 10rpx;
+}
+.main-food{
+  display: flex;
+  position: relative;
+  background-color: #FFFFFF;
+  border-bottom: solid lightgray 1rpx;
+  padding: 20rpx 20rpx 20rpx 20rpx
+}
+ /* .main-food>view:nth-child(1){
+  position: absolute;
+  left: 20rpx;
+} */
+ .main-food>view:nth-child(2){
+  position: absolute;
+  right: 100rpx;
+}
+.main-food>view:nth-child(3){
+  position: absolute;
+  right: 0rpx;
+  color: red;
+}  
+.all-money{
+  display: flex;
+  position: relative;
+  /* margin: 0rpx 20rpx 20rpx 20rpx; */
+  height: 110rpx;
+  background-color: #FFFFFF;
+  
+}
+.all-money>view:nth-child(1){
+  position: absolute;
+  top: 30rpx;
+  left: 20rpx;
+}
+.all-money>view:nth-child(2){
+  position: absolute;
+  top: 20rpx;
+  right: 150rpx;
+}
+.all-money>view:nth-child(3){
+  position: absolute;
+  top: 20rpx;
+  right: 0;
+}
+
+
+ .all-money>view>button{
+  font-size: 28rpx;
+  height: 68rpx;
+
+} 
+/* .all-money>button:nth-child(3){
+  color: red
+}  */

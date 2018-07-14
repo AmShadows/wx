@@ -1,0 +1,59 @@
+/* pages/addlocation/addlocation.wxss */
+.main{
+  margin: 25rpx 0 0 25rpx;
+  font-size: 30rpx;
+}
+.contact{
+  display: flex;
+  border-bottom:1rpx solid lightgray;
+  height: 64rpx;
+}
+.contacts-input{
+  padding: 0 0 0 70rpx;
+  width: 500rpx;
+}
+.radio-group{
+  padding: 25rpx 0 0rpx 165rpx;
+  border-bottom:1rpx solid lightgray;
+  height: 64rpx;
+}
+.radio{
+   letter-spacing: 8rpx;
+   
+}
+.item-radio{
+  transform:scale(0.8); 
+ 
+}
+
+.phone{
+  display: flex;
+  padding: 25rpx 0 0rpx 0rpx;
+  border-bottom:1rpx solid lightgray;
+  height: 64rpx;
+}
+.phone-input{
+  padding: 0 0 0 70rpx;
+  width: 500rpx;
+}
+
+.address{
+  display: flex;
+  padding: 25rpx 0 0rpx 0rpx;
+  border-bottom:1rpx solid lightgray;
+  height: 64rpx;
+}
+.address-input{
+  padding: 0 0 0 40rpx;
+  width: 500rpx;
+}
+.address-button{
+  padding: 20rpx 45rpx 0 20rpx;
+  
+}
+.keep{
+  background-color: red;
+}
+radio{
+  color: red
+}

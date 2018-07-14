@@ -1,0 +1,47 @@
+{
+  "pages":[
+	  "pages/index/index",
+      "pages/dingdan/evaluate/evaluate",
+      "pages/dingdan/dingdan",
+      "pages/my/my",
+      "pages/index-detail/order-complete/order-complete", 
+      "pages/index-detail/order/order",
+      "pages/index-detail/menu/menu",
+      "pages/index-detail/index-detail",
+      "pages/location/location",
+      "pages/addlocation/addlocation",
+      "pages/index-item/index-item"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1E1E1E",
+    "navigationBarTitleText": "华软食堂",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "font-size":"50rpx"
+  },
+  "tabBar": {
+    "color": "#1E1E1E",
+    "selectedColor": "#FFD161",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/dingdan/dingdan",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order-selected.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-selected.png",
+        "text": "我"
+      }
+    ]
+  }
+}

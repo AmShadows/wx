@@ -1,0 +1,64 @@
+<!--pages/index-detail/order/order.wxml-->
+<view class='header'>
+  <view class='header-user'>
+    <view class='header-left'><image src='/images/locationblack.jpg' style='width:35rpx;height:40rpx' /></view>
+    <view class='header-mid'>
+      <view>广州大学华软软件学院</view>
+      <view>***先生 ***********</view>
+    </view>
+    <view class='header-right'>
+      <image src='/images/right.png' style='width:35rpx;height:40rpx'></image>
+    </view>
+  </view>
+  <view class='header-time'>
+    <view><image src='/images/clock.jpg' class='header-time-left'></image></view>
+    <view class='header-time-mid'>立即送出（大约30分钟送达）</view>
+    <view class='header-time-right'><image src='/images/right.png' style='width:35rpx;height:40rpx'></image></view>
+  </view>
+</view>
+
+<view class='main-shop' >
+  <view class='main-shop-name'>店家：{{shop}}</view>
+  <view class='main-food' wx:for="{{orderDetail}}" wx:for-index="idx" wx:key="idx">
+    <view class='main-food-img'><image style='width:120rpx;height:120rpx' src='{{item.src}}'></image></view>
+    <view class='main-food-title'>
+      <text>{{item.title}}</text>
+      <view>×{{item.numb}}</view>
+    </view>
+    <view class='main-food-price'><text>￥{{item.price}}</text></view>
+  </view>
+  <view class='packing'>
+    <view class='packing-text'>包装费</view>
+    <view class='packing-money'>￥0</view>
+  </view>
+  <view class='distribution'>
+    <view class='distribution-text'>配送费</view>
+    <view class='distribution-money'>￥0</view>
+  </view>
+  <view class='all-money'>
+    <view><text>小计</text><text>￥{{cost}}</text></view>
+  </view>
+</view>
+
+<view class='other'>
+  <view class='pay-method'>
+    <view><text>支付方式</text></view>
+    <view class='pay-method-right'><text>仅限微信支付</text></view>
+  </view>
+  <view class='remarks'>
+    <view><text>备注</text></view>
+    <view class='remarks-right'><input placeholder='口味，偏好等要求 >' style='text-align:right'></input></view>
+  </view>
+</view>
+
+<view class='footer'>
+    <view class='footer-left'>合计<text style='color:red'>￥{{cost}}</text></view>
+    <text class='footer-right' bindtap='ontapjump'>提交订单</text>
+</view>
+
+<!-- <view class="food-detail" wx:for="{{orderDetail}}" wx:for-index="idx" wx:key="idx">
+  <text>{{cost}}</text>
+  <text>{{item.title}}</text>
+</view>
+<view>+{{cost}}</view>
+<view>+{{title}}</view> -->

@@ -1,0 +1,23 @@
+<!--pages/addlocation/addlocation.wxml-->
+<view class='main'>
+  <view class='contact'>
+    <text class='contacts'>联系人:</text>
+    <input placeholder="请填写收货人的姓名" class='contacts-input' ></input>
+  </view>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key>
+      <radio value="{{item.name}}" checked="{{item.checked}}" class='item-radio' color='red'/>{{item.value}}
+    </label>
+  </radio-group>
+  <view class='phone'>
+    <text class='phonenum'>手机号:</text>
+    <input placeholder="请填写收货人手机号码" class='phone-input'></input>
+  </view>
+  <view class='address'>
+    <text class='addressnum'>收货地址:</text>
+    <input placeholder="请填写收货人地址" class='address-input'></input>
+  </view>
+  <view class='address-button'> 
+    <button class='keep'>保存地址</button>
+  </view>
+</view>

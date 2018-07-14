@@ -1,0 +1,50 @@
+<!--pages/location/location.wxml-->
+<view class='header'>
+  <input placeholder="请输入收货地址" bindinput="input" class='header-input'></input>
+  <view class="search-btn">
+    <text class='search-text'>搜索</text>
+  </view>
+</view>
+<view class='dingwei'>
+  <view class='dingwei-text'>{{address}}</view>
+  <view class='dingwei-refresh' catchtap="chooseLocation">重新定位</view>
+  <!-- map.wxml -->
+  <!-- <map id="myMap" show-location /> -->
+</view>
+<view class='myaddress'>
+  <view class='myaddress-top'>
+    <view>
+      <image src='/images/home.png' class='myaddress-img'></image>
+    </view>
+    <view>
+      <text class='myaddress-text'>我的收货地址</text>
+    </view>
+  </view>
+  <view class=''>白宫</view>
+</view>
+<view class='nearaddress'>
+  <view class='nearaddress-top'>
+    <view>
+      <image src='/images/nearaddress.jpg' class='nearaddress-img'></image>
+    </view>
+    <view>
+      <text class='nearaddress-text'>附近地址</text>
+    </view>
+  </view>
+  <view class='' bindtap="getLocation" catchtap="showMap" style='color:red'>显示定位</view>
+</view>
+
+<view class='foot' catchtap='ontapjump'>
+  <text class='foot-text'>+新增收货地址</text>
+</view>
+
+<!--隐藏层-->
+<view class="result-container" hidden="{{hidden}}">
+  <scroll-view scroll-y="true" class="search-result-list" hidden="{{hidden}}">
+    <block wx:for="{{locationList}}" wx:key="">
+      <view class="search-result" bindtap="onTap" data-key="{{item.address}}">{{item.name}}
+        <view class="search-result-desc">{{item.address}}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

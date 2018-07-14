@@ -1,0 +1,163 @@
+/* pages/index-detail/order/order.wxss */
+page{
+  background-color: #F5F6F6;
+  font-size: 32rpx;
+}
+.header{
+  width: 710rpx;
+  height: 200rpx;
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  background-color: white;
+  font-size: 32rpx;
+}
+.header-user{
+  position: relative;
+  display: flex;
+  height: 130rpx;
+  border-bottom:solid 1rpx gray;
+  margin: 20rpx 20rpx 10rpx 20rpx;
+}
+.header-left{
+  margin-top: 40rpx;
+}
+.header-mid{
+  /* background-color: red; */
+  width: 700rpx;
+  margin: 0 0 0 20rpx;
+  line-height: 60rpx;
+}
+.header-right{
+  position: absolute;
+  top: 40rpx;
+  right: 0rpx;
+}
+.header-time{
+  position: relative;
+   display: flex; 
+  margin-left:15rpx; 
+  margin-right:20rpx; 
+  /* display:inline-block; */
+  vertical-align: middle
+}
+.header-time-left{
+  width:45rpx;
+  height:35rpx;
+  padding-top:5rpx
+}
+.header-time-mid{
+  padding: 0 0 0 20rpx
+}
+.header-time-right{
+  position: absolute;
+  top:8rpx;
+  right: 0
+}
+.main-shop{
+  width: 710rpx;
+  /* height: 500rpx; */
+  margin: 20rpx 0rpx 0rpx 20rpx;
+  background-color: white;
+}
+.main-shop-name{
+  padding: 15rpx 0 0 20rpx;
+}
+.main-food{
+  position: relative;
+  display: flex;
+  width: 710rpx;
+  height: 160rpx;
+  margin: 15rpx 0rpx 0rpx 0rpx;
+  background-color: #F5F6F6;
+}
+.main-food-img{
+  padding: 20rpx 20rpx 20rpx 20rpx ;
+}
+.main-food-title{
+  padding-top: 10rpx;
+  width: 480rpx;
+  /* background-color: red */
+}
+.main-food-price{
+  position: absolute;
+  top: 10rpx;
+  right: 20rpx;
+}
+.packing{
+  position: relative;
+  display: flex;
+  padding: 20rpx 0rpx 0rpx 20rpx;
+  background-color: white;
+}
+.packing-text{
+  width: 610rpx;
+}
+.packing-money{
+  position: absolute;
+  right: 20rpx
+}
+.distribution{
+  position: relative;
+   display: flex;
+  padding: 20rpx 0rpx 20rpx 20rpx;
+  border-bottom: 1rpx dashed gray;
+  background-color: white;
+}
+.distribution-text{
+  width: 610rpx;
+}
+.distribution-money{
+  position: absolute;
+  right: 20rpx
+}
+.all-money{
+  background-color: white;
+  text-align:right;
+  padding: 20rpx 20rpx 20rpx 0 ;
+}
+.other{
+  width: 710rpx;
+  height: 285rpx;
+  margin: 20rpx 0rpx 0rpx 20rpx;
+  background-color: white;
+}
+.pay-method{
+  position: relative;
+  display: flex;
+  padding: 20rpx 0rpx 20rpx 20rpx;
+}
+.pay-method-right{
+  position: absolute; 
+  right: 20rpx
+
+}
+.remarks{
+  position: relative;
+  display: flex;
+  padding: 20rpx 0rpx 20rpx 20rpx;
+}
+.remarks-right{
+  position: absolute;
+  right: 20rpx
+
+}
+.footer{
+  position: fixed;
+  z-index:2;
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  bottom: 0;
+  background-color: white;
+  border-top: 1rpx solid lightgrey;
+}
+.footer-left{
+  width: 500rpx;
+  text-align: right;
+  padding: 20rpx 20rpx 0 0;
+}
+.footer-right{
+  width: 250rpx;
+  text-align: center;
+  padding-top: 20rpx;
+  background-color: red
+}

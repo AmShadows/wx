@@ -1,0 +1,41 @@
+<!--pages/index-detail/index-detail.wxml-->
+<import src="/pages/index-detail/menu/menu.wxml" />
+<view>
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}" vertical="{{vertical}}" class='header-swiper'>
+      <block wx:for="{{newsarr}}" wx:key="">
+        <swiper-item>
+          <view class="swiperList">
+            <text class="iconfont icon-news"></text>
+             <text class='swiperList-font'>{{item.message}}</text> 
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view disable-scroll="true">
+  <view class="header">
+    <block wx:for="{{swiperTitle}}" wx:key="">
+      <view class="title {{index==currentPage?'selected':''}}" data-index="{{index}}"  bindtap="tabdetail">{{item.text}}</view>
+    </block> 
+  </view>
+   <swiper class="swipermenu" current="{{currentPage}}" bindchange="turnTitle">
+    <swiper-item id="menu">
+        <template is="menuitem" data="{{...post,selected:selected,numb:numb}}" /> 
+    </swiper-item>
+    <swiper-item id="evaluate">
+      <template data="{{categoryList}}" />
+    </swiper-item>
+    <swiper-item id="restaurant">
+    </swiper-item>
+  </swiper> 
+</view>
+<view class="foot {{cost!=0?'active':''}}">
+  <view class='footer'>
+    <view class='foot-bike' style="background:{{cost!=0?'grey':'#E7E7E7'}};"><image src='/images/trolley.png' class='foot-bike-img'></image></view>
+    <view class="foot-cost" hidden="{{cost==0}}">￥{{cost}}</view>
+    <view class="{{cost ==0?'foot-free':'foot-nofree'}} foot-free">免配送费</view>
+  </view>
+    <view class="foot-text" hidden="{{cost==0}}" catchtap="placeorder">去结算</view>
+    <view class="foot-notext" hidden="{{cost !=0}}">10元起送</view>
+  </view>

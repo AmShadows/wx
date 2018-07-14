@@ -1,0 +1,38 @@
+<!--pages/index-detail/order-complete/order-complete.wxml-->
+<view class='header'>
+  <view class='header-border'>
+    <view class='header-one' catchtap='ontapdingdan'>订单已完成(详情) ></view>
+    <view class='header-two'>感谢您对华软饭堂的信任，期待再次光临</view>
+    <view class='header-three' bindtap="ontapjump">再来一单</view>
+  </view> 
+</view>
+<view class='main'>
+  <view class='main-shop-name'>店家：{{shop}}</view>
+  <view class='main-food' wx:for="{{orderDetail}}" wx:for-index="idx" wx:key="idx">
+      <view class='main-food-img'><image style='width:120rpx;height:120rpx' src='{{item.src}}'></image></view>
+      <view class='main-food-title'>
+        <text>{{item.title}}</text>
+        <view>×{{item.numb}}</view>
+      </view>
+      <view class='main-food-price'><text>￥{{item.price}}</text></view>
+  </view>
+  <view class='packing'>
+    <view class='packing-text'>包装费</view>
+    <view class='packing-money'>￥0</view>
+  </view>
+  <view class='distribution'>
+    <view class='distribution-text'>配送费</view>
+    <view class='distribution-money'>￥0</view>
+  </view>
+  <view class='all-money'>
+    <view><text>小计</text><text>￥{{cost}}</text></view>
+  </view>
+</view>
+
+<view class='footer'>
+  <view class='footer-border'>
+    <image src='/images/phone.jpg' style='width:60rpx;height:50rpx'></image>
+    <text class='footer-font'>电话商家</text>
+  </view>
+ 
+</view>

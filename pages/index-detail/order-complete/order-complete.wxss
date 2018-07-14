@@ -1,0 +1,98 @@
+/* pages/index-detail/order-complete/order-complete.wxss */
+page{
+  background-color: #F5F6F6;
+  font-size: 32rpx;
+}
+.header{
+  height: 300rpx;
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  background-color: white;
+}
+.header-border{
+  text-align: center;
+  padding:20rpx 20rpx 0 20rpx;
+  line-height: 70rpx
+}
+.header-one{
+  font-weight: bold;
+}
+.header-two{
+  font-size: 30rpx;
+}
+.header-three{
+  margin: 20rpx auto;
+  width: 200rpx;
+  background-color: red;
+  border-radius: 10rpx
+}
+.main{
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  background-color: white;
+}
+.main-shop-name{
+  padding: 15rpx 0 0 20rpx;
+}
+.main-food{
+  position: relative;
+  display: flex;
+  width: 710rpx;
+  height: 160rpx;
+  margin: 15rpx 0rpx 0rpx 0rpx;
+  background-color: #F5F6F6;
+}
+.main-food-img{
+  padding: 20rpx 20rpx 20rpx 20rpx ;
+}
+.main-food-title{
+  padding-top: 10rpx;
+  width: 480rpx;
+}
+.main-food-price{
+  position: absolute;
+  top: 10rpx;
+  right: 20rpx;
+}
+.packing{
+  position: relative;
+  display: flex;
+  padding: 20rpx 0rpx 0rpx 20rpx;
+  background-color: white;
+}
+.packing-text{
+  width: 610rpx;
+}
+.packing-money{
+  position: absolute;
+  right: 20rpx
+}
+.distribution{
+  position: relative;
+   display: flex;
+  padding: 20rpx 0rpx 20rpx 20rpx;
+  border-bottom: 1rpx dashed gray;
+  background-color: white;
+}
+.distribution-text{
+  width: 610rpx;
+}
+.distribution-money{
+  position: absolute;
+  right: 20rpx
+}
+.all-money{
+  background-color: white;
+  text-align:right;
+  padding: 20rpx 20rpx 20rpx 0 ;
+}
+.footer{
+  height: 90rpx;
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  background-color: white;
+}
+.footer-border{
+  padding-top: 20rpx;
+  display:flex;
+  align-items: center; 
+  justify-content: center; 
+
+} 
