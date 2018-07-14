@@ -1,7 +1,12 @@
 # wx
 微信小程序-点餐系统
+
+主要两点：
+
 data.js模拟数据库
+
 DBpost模拟缓存
+
 主页：
 
 ![image](https://github.com/AmShadows/wx/blob/master/screenshot/1.jpg) 
