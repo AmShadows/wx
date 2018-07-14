@@ -5,7 +5,7 @@
 
 data.js模拟数据库
 
-DBpost模拟缓存
+DBPost.js模拟缓存
 
 主页：
 
